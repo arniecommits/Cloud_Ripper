@@ -1,0 +1,9 @@
+aws ecs list-clusters,ecs
+aws s3api list-buckets,s3
+aws ec2 describe-key-pairs,ec2
+aws iam list-users,iam
+aws route53 list-hosted-zones,route53
+aws iam create-user --user-name Alice,iam
+aws iam create-login-profile --user-name Alice --password "<>",iam
+aws iam list-groups,iam
+aws iam add-user-to-group --user-name Alice --group-name Aws_admins,iam
