@@ -25,7 +25,7 @@ The attacker machine from which the RunAttack.py script is executed must have aw
 
 The script has only been tested on Debian based Linux release.
 
-Minimum Permissions the initial Role attached to the work must have: IAM List, eg. policy bellow
+Minimum Permissions the initial Role attached to the workload must have: IAM List/some type of read permissions, eg. policy bellow
 
 ```
 {
@@ -51,10 +51,10 @@ Their are two parts two the script , the attack execution script and service enu
 
 The attack execution script reads the awscli commands present in the enum.txt file to attempt to enumerate services and try to work out how deep the permissions are in terms of privileges for the exisiting role, it than moves to find other roles that can exploited and once assumed other roles successfully will loop through and discover additional vulnerable roles that can be potentially exploited.
 
-The script can be run as python3 RunAttack.py [the enum.txt file needs to be in the same dir as the script]
+The script can be run as python3 Run__Attack.py [the enum.txt file needs to be in the same dir as the script]
 
 ```
-python3 RunAttack.py
+python3 Run_Attack.py
 ```
 
 ## Defensive Advise:
