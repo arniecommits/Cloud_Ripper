@@ -1,5 +1,5 @@
 # Cloud Ripper
-
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ---
 
 This is an effort to highlight risks from cloud misconfigurations or having seemingly unused artefacts such as IAM policies/Roles in your cloud environment. This is an initial framework approach so that you can take and build upon the various service discovery and enumeration techniques that have been used in script. This particular version is aimed at AWS similar techniques can utilised with other CSP's.
@@ -58,7 +58,9 @@ The attack execution script reads the awscli commands present in the enum.txt fi
 
 The script can be run as python3 RunAttack.py [the enum.txt file needs to be in the same dir as the script]
 
-
+```
+python3 RunAttack.py
+```
 
 ## Defensive Advise:
 
