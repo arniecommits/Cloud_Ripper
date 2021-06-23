@@ -47,7 +47,7 @@ Minimum Permissions the initial Role attached to the workload must have: IAM Lis
 
 ### Usage Information:
 
-Their are two parts two the script , the attack execution script and service enumeration dictionary file.
+Their are two parts to the script , the attack execution script and service enumeration dictionary file.
 
 The attack execution script reads the awscli commands present in the enum.txt file to attempt to enumerate services and try to work out how deep the permissions are in terms of privileges for the exisiting role, it than moves to find other roles that can exploited and once assumed other roles successfully will loop through and discover additional vulnerable roles that can be potentially exploited.
 
@@ -63,6 +63,8 @@ python3 Run_Attack.py
 
 2. Ensure application traffic is inspected by a Cloud IPS solution such McAfee vNSP so you can look for malicious traffic such as shellcode or injection attempts.
 
-3. Use Cloud Security Posture Management tool such as [MVISION Cloud]([McAfee MVISION Cloud for Container Security | McAfee](https://www.mcafee.com/enterprise/en-gb/products/mvision-cloud/container-security.html)) which can look for building your resource inventory and run effective checks against privilege creep or unused resources.
+3. Ensure outbound traffic from workloads are regulated and cant be misused for defense evasion techniques.
 
-4. Remove unused Cloud config objects, and ensure any roles that have **assume** capabilities have strict conditions attached so they cannot be taken over and exploited.
+4. Use Cloud Security Posture Management tool such as  which can look for building your resource inventory and run effective checks against privilege creep or unused resources.
+
+5. Remove unused Cloud config objects, and ensure any roles that have **assume** capabilities have strict conditions attached so they cannot be taken over and exploited.
