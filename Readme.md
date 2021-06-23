@@ -1,14 +1,11 @@
 # Cloud Ripper
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ---
 
-This is an effort to highlight risks from cloud misconfigurations or having seemingly unused artefacts such as IAM policies/Roles in your cloud environment. This is an initial framework approach so that you can take and build upon the various service discovery and enumeration techniques that have been used in script. This particular version is aimed at AWS similar techniques can utilised with other CSP's.
-
-
+This is an effort to highlight risks from cloud misconfigurations; we also look at how seemingly unused artefacts such as IAM policies/Roles in your cloud environment can be easily misused to move laterally or exfiltrate data. This is an initial framework approach so that you can take and build upon the various service discovery and enumeration techniques that have been used in script. This particular version is aimed at AWS similar techniques can utilised with other CSP's.
 
 **Please Note: The purpose of the code is purely educational and should not be used with malicious intent or within infrastructure where you do not have permissions to run such tests.**
-
-
 
 ## Sample Application Architecture
 
@@ -21,8 +18,6 @@ In the above example, we have a simple web app that uses a vulnerable version of
 MITRE TTP's
 
 **![MITRE Tactics Used:](https://user-images.githubusercontent.com/60926235/123084778-7230be00-d419-11eb-9ead-a1198c8fba54.png)**
-
-
 
 ### Install Pre-Reqs:
 
@@ -48,8 +43,6 @@ Minimum Permissions the initial Role attached to the work must have: IAM List, e
     ]
 } 
 
-
-
 ### Usage Information:
 
 Their are two parts two the script , the attack execution script and service enumeration dictionary file.
@@ -71,13 +64,3 @@ python3 RunAttack.py
 3. Use Cloud Security Posture Management tool such as [MVISION Cloud]([McAfee MVISION Cloud for Container Security | McAfee](https://www.mcafee.com/enterprise/en-gb/products/mvision-cloud/container-security.html)) which can look for building your resource inventory and run effective checks against privilege creep or unused resources.
 
 4. Remove unused Cloud config objects, and ensure any roles that have **assume** capabilities have strict conditions attached so they cannot be taken over and exploited.
-
-
-
-
-
-
-
-
-
-
