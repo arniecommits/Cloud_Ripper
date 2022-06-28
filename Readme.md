@@ -61,10 +61,10 @@ python3 Run_Attack.py
 
 1. Ensure applications are scanned for vulnerabilities and code dependencies and libraries used are regularly updated.
 
-2. Ensure application traffic is inspected by a Cloud IPS solution such McAfee vNSP so you can look for malicious traffic such as shellcode or injection attempts.
+2. Ensure application traffic is inspected by a Cloud IPS solution so you can look for malicious traffic such as shellcode or injection attempts.
 
 3. Ensure outbound traffic from workloads are regulated and cant be misused for defense evasion techniques.
 
-4. Use Cloud Security Posture Management tool such as MVISION Cloud which can look for building your resource inventory and run effective checks against privilege creep or unused resources.
+4. Use Cloud Security Posture Management tool such as CNAPP which can look for building your resource inventory and run effective checks against privilege creep or unused resources.
 
 5. Remove unused Cloud config objects, and ensure any roles that have **assume** capabilities have strict conditions attached so they cannot be taken over and exploited.
